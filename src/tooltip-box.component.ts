@@ -14,7 +14,7 @@ import { animate, trigger, style, state, transition } from '@angular/animations'
   styles: [
       `
           :host {
-              background-color: rgba(0,0,0,0.8);
+              background-color: rgba(102,102,102,102);
               color: white;
               display: inline-block;
               position: fixed;
@@ -31,10 +31,10 @@ import { animate, trigger, style, state, transition } from '@angular/animations'
               height: 0;
           }
     `,
-    ':host.has-arrow.arrow-top:before { border-bottom: 5px solid rgba(0,0,0,0.8); top: -10px; }',
-    ':host.has-arrow.arrow-left:before { border-right: 5px solid rgba(0,0,0,0.8); left: -10px; }',
-    ':host.has-arrow.arrow-right:before { border-left: 5px solid rgba(0,0,0,0.8); right: -10px; }',
-    ':host.has-arrow.arrow-bottom:before { border-top: 5px solid rgba(0,0,0,0.8); bottom: -10px; }'
+    ':host.has-arrow.arrow-top:before { border-bottom: 5px solid rgba(102,102,102,102); top: -10px; }',
+    ':host.has-arrow.arrow-left:before { border-right: 5px solid rgba(102,102,102,102); left: -10px; }',
+    ':host.has-arrow.arrow-right:before { border-left: 5px solid rgba(102,102,102,102); right: -10px; }',
+    ':host.has-arrow.arrow-bottom:before { border-top: 5px solid rgba(102,102,102,102); bottom: -10px; }'
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
