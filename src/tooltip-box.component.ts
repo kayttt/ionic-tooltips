@@ -3,7 +3,7 @@ import { animate, trigger, style, state, transition } from '@angular/animations'
 
 @Component({
   selector: 'tooltip-box',
-  template: '{{ text }}',
+  template: '<span [innerHtml]="text"><span>',
   animations: [
     trigger('fade', [
       state('visible', style({ opacity: 1})),
@@ -18,8 +18,8 @@ import { animate, trigger, style, state, transition } from '@angular/animations'
               color: white;
               display: inline-block;
               position: fixed;
-              padding: 15px 25px;
-              font-size: 15px;
+              padding: 5px 15px;
+              font-size: 11sp;
           }
     `,
       `
